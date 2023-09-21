@@ -1,0 +1,8 @@
+
+[ download Uncrackable-level1.apk ]
+https://github.com/OWASP/owasp-mstg
+https://github.com/OWASP/owasp-mstg/blob/master/Crackmes/Android/Level_01/UnCrackable-Level1.apk
+
+ref:
+https://1337.dcodx.com/mobile-security/owasp-mstg-crackme-1-writeup-android
+https://enovella.github.io/android/reverse/2017/05/18/android-owasp-crackmes-level-1.html

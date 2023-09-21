@@ -1,0 +1,22 @@
+List of commands:
+`````````````````
+
+[ connecting to emulators ]
+adb devices
+
+adb shell, then su (if using LDPayer, then not necessary to su)
+
+adb -s emulator-5556 shell, then su
+
+[ frida ]
+frida-ps -Uai
+
+attach to process:
+frida -U -n "App Name"
+
+[ objection ]
+attach to process:
+objection --gadget com.app.name explore
+
+[ listing processes ]
+ps | grep frida-server

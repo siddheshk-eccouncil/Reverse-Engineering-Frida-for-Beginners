@@ -1,0 +1,17 @@
+[ UNDERSTANDING FRIDA CLI (Command Line Interface) ]
+
+1. adb devices
+
+2. adb shell
+   ps | grep frida-server
+   /data/local/tmp/frida-server &
+   
+3. frida-ps -Uai
+
+4. frida -U -f com.example.helloapp
+   %resume
+   Java.available
+   Java.androidVersion
+
+
+ref:  https://frida.re/docs/javascript-api/#java

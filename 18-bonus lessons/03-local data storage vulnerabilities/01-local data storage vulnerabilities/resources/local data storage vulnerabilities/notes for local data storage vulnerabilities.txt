@@ -1,0 +1,22 @@
+
+[ Insecure Bank app ]
+https://github.com/dineshshetty/Android-InsecureBankv2
+
+
+Use the credentials dinesh/Dinesh@123$ or jack/Jack@123$ and start using the application
+
+
+--- [ INSECURE LOCAL STORAGE ] ----------
+ls /data/data/
+cd com.android.insecurebankv2
+
+interesting folders:
+
+shared-prefs
+databases
+
+sqlite3 commands:
+
+sqlite3 mydb
+.tables
+select * from names;

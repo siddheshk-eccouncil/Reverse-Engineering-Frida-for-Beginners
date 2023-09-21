@@ -1,0 +1,6 @@
+--- [ INSECURE LOGGING ] ---
+Use the credentials dinesh/Dinesh@123$ or jack/Jack@123$
+
+adb logcat -c
+
+adb logcat | findstr "jack"

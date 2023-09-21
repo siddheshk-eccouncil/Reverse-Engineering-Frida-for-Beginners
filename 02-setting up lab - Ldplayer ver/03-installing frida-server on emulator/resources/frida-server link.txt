@@ -1,0 +1,9 @@
+[ download frida server ]
+
+https://github.com/frida/frida/releases
+
+Select:
+frida-server-15.1.17-android-x86.xz
+
+[ references ]
+https://frida.re/docs/home/

@@ -1,0 +1,18 @@
+
+[ enumerate imports (list functions) ]
+https://blog.karthisoftek.com/a?ID=01750-671ab62c-c687-45c9-894c-8bdf7c6fe5e1
+
+[ msdn createfile ]
+https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createfilea
+
+
+[ file access rights constants ]
+https://docs.microsoft.com/en-us/windows/win32/fileio/file-access-rights-constants
+
+[ Frda docs for javascript api ]
+https://frida.re/docs/javascript-api/
+
+
+
+
+

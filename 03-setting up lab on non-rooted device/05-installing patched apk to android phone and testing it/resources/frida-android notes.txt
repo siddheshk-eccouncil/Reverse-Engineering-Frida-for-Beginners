@@ -1,0 +1,75 @@
+
+[ connecting to emulators ]
+adb devices
+
+adb shell, then su (if using LDPayer, then not necessary to su)
+
+adb -s emulator-5556 shell, then su
+
+[ frida ]
+frida-ps -Uai
+
+attach to process:
+frida -U -n "App Name"
+
+[ objection ]
+attach to process:
+objection --gadget com.app.name explore
+
+[ listing processes ]
+ps | grep frida-server
+
+[ download apktool for windows ]
+https://apktool.en.lo4d.com/windows
+
+
+
+
+---------- [ FOR NON-ROOTED ANDROID PHONE ] ----------
+
+[ patching with objection - for non-rooted android ]
+objection patchapk --source hello-app.apk -a architecture
+
+Valid architecture options are: armeabi, armeabi-v7a, arm64, arm64-v8a, x86, x86_64
+ 
+if you get error, then do this:
+objection patchapk --source hello-app.apk -a architecture --use-aapt2
+
+ref:
+https://github.com/sensepost/objection/issues/253
+https://github.com/iBotPeaches/Apktool/issues/1978
+
+
+[ get architecture ]
+adb shell getprop ro.product.cpu.abi
+adb shell getprop ro.product.cpu.abilist
+
+
+[ install patched apk on non-rooted device ]
+
+adb devices
+0123456789ABCDEF  device
+
+adb -s 0123456789ABCDEF install hello-app.objection.apk
+
+
+[ on non-rooted device after installing patched apk ]
+
+Tap to open the apk. It will open in paused state.
+
+frida-ps -Uai
+
+6121 Gadget re.frida.Gadget
+
+frida -U -n Gadget
+
+
+---- [ REVERSE ENGINEERING WITH APKTOOL ] ----
+apktool d hello-app.apk
+
+Add this to the manifest file:
+<uses-permission android:name="android.permission.INTERNET"/>
+
+apktool b hello-app --use-aapt2
+
+

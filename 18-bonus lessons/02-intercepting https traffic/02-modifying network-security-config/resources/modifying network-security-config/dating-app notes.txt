@@ -1,0 +1,11 @@
+[ Dating app : Mail.Ru Dating 3.166.7 ]
+https://www.apkmirror.com/apk/%d0%b7%d0%bd%d0%b0%d0%ba%d0%be%d0%bc%d1%81%d1%82%d0%b2%d0%b0mail-ru/mail-ru-dating/mail-ru-dating-3-166-7-15543-release/mail-ru-dating-3-166-7-15543-android-apk-download/
+
+
+[ creating keystore ]
+keytool -genkey -v -keystore mykey.keystore -alias mykey -keyalg RSA -keysize 2048 -validity 10000
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore mykey.keystore Myapp.apk mykey
+
+alias = mykey
+password = 123456
+

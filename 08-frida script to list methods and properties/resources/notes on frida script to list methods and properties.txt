@@ -1,0 +1,11 @@
+[ LIST METHOD AND PROPERTIES ]
+
+Java.use:
+https://frida.re/docs/javascript-api/#java
+
+Object.getOwnPropertyNames():
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames
+
+JavaScript Array join():
+https://www.w3schools.com/jsref/jsref_join.asp
+

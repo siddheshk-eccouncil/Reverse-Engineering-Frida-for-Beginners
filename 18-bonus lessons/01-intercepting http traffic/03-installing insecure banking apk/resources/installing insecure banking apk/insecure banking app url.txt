@@ -1,0 +1,8 @@
+[ insecure banking apk ]
+
+https://github.com/dineshshetty/Android-InsecureBankv2
+
+This version is not compatible with python3.
+
+Please use my version which is already modified by me to be
+compatible with python 3.

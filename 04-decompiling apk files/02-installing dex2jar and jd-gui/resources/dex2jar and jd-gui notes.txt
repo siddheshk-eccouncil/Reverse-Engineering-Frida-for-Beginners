@@ -1,0 +1,13 @@
+[ download dex2jar ]
+
+https://github.com/pxb1988/dex2jar
+
+
+[ download jd-gui ]
+
+http://java-decompiler.github.io/
+
+to run:
+
+java -jar jd-gui.jar
+

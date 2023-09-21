@@ -1,0 +1,19 @@
+[ HELLO WORLD SCRIPTING ]
+
+1. adb devices
+
+2. adb shell
+   ps | grep frida-server
+   /data/local/tmp/frida-server &
+   
+3. frida-ps -Uai
+
+4. frida -U -f com.example.helloapp -l hellworld.js
+   %resume
+
+
+ref:  https://frida.re/docs/javascript-api/#java
+      https://code.visualstudio.com/download
+
+
+
